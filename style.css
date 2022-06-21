@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -9,11 +10,75 @@ body
   overflow: hidden;
 }
 
+section{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-box{
+  width: 100vw;
+  height: 25vh;
+  text-align: center;
+}
+.text-box h1{
+  font-size: 126px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #e0fbfc;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+}
+.footer{
+  position: absolute;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+  font-family: 'Playfair Display', serif;
+  color: rgb(21, 21, 21);
+}
+.name{
+  width: 150px;
+  height: 5vh;
+  display: flex;
+  justify-content: center;align-items: center;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.date{
+  width: 100px;
+  height: 5vh;
+  display: flex;
+  justify-content: center;align-items: center;
+  letter-spacing: 5px;
+  font-size: 16px;
+}
 .webgl
 {
   position: fixed;
   top: 0;
   left: 0;
   outline: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
 }
 
+@media screen and (max-width: 600px) {
+  .text-box h1{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #e0fbfc;
+    text-transform: uppercase;
+    mix-blend-mode: screen;
+  }
+}
